@@ -1,0 +1,21 @@
+Practice the Software Design Life Cycle process
+
+Planning
+	Create Requirement Documentation
+	List of functional requirements
+
+Analysis
+	Use Case diagram with list of use cases
+	Activity diagram foo each user
+	Sequence diagram for interactions between different user types
+
+Design
+	Class diagram
+	State diagram
+
+Implementation
+ Programming
+
+Maintenance
+	Create test plan and test cases
+	Keep documentation of working issues and solutions
