@@ -1,0 +1,124 @@
+ 
+School of Engineering
+Department of Electrical Engineering and Computer Science
+Senior Design 2014 – 2015
+
+Interactive Department Display
+
+Max Huddleston
+Ali Gillis
+Meshari Alluqmani
+Tho Vi
+
+ 
+What we are doing
+
+	We will have a 50 inch monitor inside the glass display case on the second floor across from the EECS office and the monitor will use custom software to display
+	Department Information
+	Department Events & Annoucements
+	Faculty Research
+	Faculty Information
+	Student Projects
+	Games
+	Users will interact with the display using the Xbox Kinect for Windows
+	You are able to stand up to 10 feet away and the Kinect will recognize your hand as the mouse
+	Computer Science Students: Max & Ali
+	Design Software user interface
+	Write back end functions
+	Create Dropbox folder architecture to store files to display
+	Electrical Engineering Students: Tho&Meshari
+	Implement Windows Kinect to be used as a mouse
+	Write functions to ensure that only one user is active at a time and that one can not interact with the screen unless they wave
+	Put interactive games on display
+
+
+
+Why we are doing it
+
+Senior design projects for the school of engineering are usually completed and then thrown away once the year is done – we wanted something that could be not only kept for years to come, but built on and improved every year. With that in mind, we decided to create something practical for the department. As of right now, there is a large display case outside of the office that had been sitting untouched for many, many years with old, outdated information. Our goal is to create a display that can show current information which will be controlled by the current assistant to the chair. This way, the department benefits from both current information being displayed at all times, and a beautiful video display. 
+Choosing to do a project like this not only showcases information in a visually appealing manner, but also showcases the abilities and the skills of both the EE and CS departments. The interactive program is the software created and updated by CS students and the interaction using a Windows Kinect which is programmed by EE students. The program has an interactive feature so the user can aspect all sorts of department-specific information, like professor data, department curriculum, and professor research, as well as having a few games built in for fun. When not being interacted with, the display will have a screensaver/idle scroll which will display a variety of campus events as well as some information in the program (professor research and the student projects).
+
+
+ 
+
+	TV has a 200mmx200mm mounting frame on back
+	TV = 43.61 lbs
+	Wall-mount supports up to 410mmx310mm. 
+	Wall-mount supports up to 100 pounds. 
+
+
+Software
+	Planning 
+	Create Manual to ensure Reusability of Application 
+	Documentation of problems & solutions
+	Dropbox
+	Implementing a folder architecture
+	Gathering department information
+	Programming
+	Adding Controller Classes & FXML Documents
+	Custom Screen Saver
+	Read & display formatted documents from dropbox
+	Manipulate Windows to enhance performance
+	Research 
+	Project Refresh
+	PDF Display
+	Help Commands
+
+Graphical User Interface Screenshots
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+	Custom Screen Saver
+	Extremely customizable
+	Allows for images, text, flash, videos
+	Test with Kinect to ensure no loss of Kinect control
+	Integrates with Windows Screen Saver
+	Creates .scr or .ssp file depending on purpose
+
+	Software Design – What is left to do?
+	System nightly refresh
+	Help Commands
+	Performance
+	Testing
+	JAR use of updated files
+	System restart (rebuild program each time?)
+	Adding files to Screen Saver
+	Help commands with Kinect
+	Stress Testing
+	Simulated administrator use 
+	Aesthetics
+	Wall Mount
+
+Kinect Objective
+	Build a mouse cursor for the Display by tracking hand gestures.
+	Step 1: Capturing the hand position.
+	Step 2: Send the position to OS (user 32).
+	Step 3: Detecting Gestures.
+
+	Region of Interest: The Skeleton tracking state is tracked when either the Left hand and the Head or the Right hand and the Head are tracked.
+	Making Clicking Easy
+	When users are performing the click in Z-axis, the mouse X-Y coordinates simultaneously change.
+	A missed click happens when the mouse does not stay on the button after releasing the mouse click.
+	A friendly display means everybody can use it.
+	Scale the Click threshold in Z-axis using Scale Invariant Fraction.
+	Takes height into consideration to make reaching and clicking easier
+	Grip and Release
+	Up to the lastest version, a single click will freeze the mouse coordinates.
+	In order to grab an object around the screen, a closed or opened hand will be detected to command this action.
+
+
+
+
