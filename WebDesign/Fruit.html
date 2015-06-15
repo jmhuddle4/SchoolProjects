@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head> 
+  <title> Huddleston_5-6 </title>
+  <meta charset = "utf-8"/>
+  <script type = "text/javascript" src = "getprice.js"> 
+  </script>
+  <style type = "text/css">
+  </style>
+</head>
+
+<body>
+
+ <form action ="">
+   <h1> Fruit </h1>
+
+  <p>
+    Apples ($0.59): 
+    <input type = "text" id = "Apples" size = "10" MaxLength = "5" MinLength = "1"/> <br/>
+    Oranges ($0.49):
+    <input type = "text" id = "Oranges" size = "2"/> <br/>
+    Bananas ($0.39):
+    <input type = "text" id = "Bananas" size = "2"/> <br/>
+
+
+  </p>
+	<br/>
+  
+  <p>
+    <input type = "button" value = "Submit" onclick = "getPrice();"/>
+	
+    <input type = "text" size = "0" id = "cost" onfocus = "this.blur();"/>
+
+    <br/>
+    <input type = "reset" value = "Reset"/>
+  </p>
+ </form>
+</body>
+
+</html>
