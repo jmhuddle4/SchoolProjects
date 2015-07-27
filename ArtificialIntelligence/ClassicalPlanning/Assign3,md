@@ -1,0 +1,35 @@
+CSC542 – Assignment 3
+Rules:
+• Plagiarism of any kind will result in failure for the course. No exceptions. If you are not sure whether
+or not you are plagiarizing from the web, classmates, or any other person/source, it is your responsibility
+to clarify it with the professor before submitting the code.
+• You can be in a team with at most another student from the class. You are allowed to discuss the
+assignment only with your team member or the professor.
+Planning
+In this project, you will gain experience with classical planning. First, download and install the FastDownward
+package following the instructions from
+http://www.fast-downward.org/ObtainingAndRunningFastDownward
+It is probably easier to compile the code on a Linux Ubuntu machine.
+1 Running Benchmarks
+Follow the instructions found here
+http://www.fast-downward.org/IpcPlanners
+on how to run some of the fast planners available in the package.
+As part of your project, you need to run one planner on three different benchmarks (choose any three from
+the available benchmarks). Report the solution found by the planner in each case.
+2 Creating your Own Benchmark
+Write in PDDL the problem where the robot has to pick up objects and transfer them to desired locations.
+More specifically, you are given several rooms R1, . . . , Rn. Some of the rooms are connected with each
+other. There are several objects O1, . . . , Om, with at most one object per room. A robot is located in one of
+the rooms. Your are also given goal rooms G1, . . . , Gm for each of the objects. The robot can pick up only
+one object at a time. There can be at most one object in a room. If the robot has picked up an object, it can
+only go to a room that has no other objects.
+You will need to first write the domain file which defines the predicates and the actions necessary to solve
+this problem. You need to provide definitions for the following functions: MoveWithoutObject, MoveWithObject,
+Pickup, Release.
+You also need to write a problem instance file which defines the initial and goal state. The problem instance
+should correspond to the picture shown in the next page.
+1
+Robot has to transfer object O1 in room R7, object O2 in room R2, and object O3 in room R9. Black
+rectangles represent walls.
+You should submit your PDDL files as well as a solution found by the planner.
+2
